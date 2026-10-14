@@ -48,7 +48,7 @@ jobs:
               mkdir "C:\niise-deployment"
           )
           echo Copying production artifact...
-          copy /Y "CC:\Users\Jim_User\Downloads\niise-demo\target\*.jar" "C:\niise-deployment"
+          copy /Y "C:\Users\Jim_User\Downloads\niise-demo\target\*.jar" "C:\niise-deployment"
 
       - name: Automatically Start Spring Boot Application
         shell: cmd
