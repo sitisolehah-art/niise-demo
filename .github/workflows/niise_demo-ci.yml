@@ -13,6 +13,8 @@ jobs:
     steps:
       - name: Sync Git Code Repo
         shell: cmd
+        env:
+            GITHUB_ACTIONS_RUNNER_TLS_NO_VERIFY: "1"
         run: |
           cd /d "C:\Users\Jim_User\Downloads\niise-demo"
           if not exist .git (
